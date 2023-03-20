@@ -1,0 +1,118 @@
+* {
+    margin: 0 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-right: 0;
+   }
+body {
+    margin-right: 0;
+    font-family: 'Rufina', serif;
+    background-color: black;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+.indian-scalp-div{
+    position: relative;
+    background-image: url("../../images/indian-scalp.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 55em;
+    justify-content: flex-end;
+    display: flex;
+}
+.detalii-masaj{
+    position: relative;
+    top: 200px;
+    left: -90px;
+    background-color: white;
+    color: black;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 280px;
+    height: 300px;
+    border-radius: 20px;
+}
+.titlu-masaj{
+    padding-bottom: 19px;
+    border-bottom: 1px solid black;
+}
+.timp-masaj{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.pret-masaj{
+    padding-top: 20px;
+    font-size: 20px;
+    opacity: 0.5;
+    padding-bottom: 20px;
+}
+.rezerva{
+    width: 140px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: #323232;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.back-neck-shoulders-div{
+    position: relative;
+    background-image: url("../../images/back-neck.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 55em;
+    justify-content: flex-end;
+    display: flex;
+}
+.aromatic-div{
+    position: relative;
+    background-image: url("../../images/aromatic-masaj.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 55em;
+    justify-content: flex-end;
+    display: flex;
+}
+.hot-stone-div{
+    position: relative;
+    background-image: url("../../images/stone-massage.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 55em;
+    justify-content: flex-end;
+    display: flex;
+}
+.footer {
+    position: relative;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+  }
+.contact{
+    padding-top: 15px;
+    padding-bottom: 5px;
+}

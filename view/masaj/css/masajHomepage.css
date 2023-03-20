@@ -1,0 +1,314 @@
+* {
+    margin: 0 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-right: 0;
+   }
+body {
+    margin-right: 0;
+    font-family: 'Rufina', serif;
+    background-color: black;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+select {
+    font-size: .9rem;
+    padding: 2px 5px 10px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+  	border-bottom: 1px solid white;
+    width: 100px;
+    padding-top: 10px;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+select:checked {
+    border: none;
+  }
+
+.beginning{
+    position: relative;
+    background-image: url("../../images/masaj.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 45em;
+    justify-content: end;
+    display: flex;
+}
+.momentulTauDeRelax{
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    background-color: #111F1E;
+    color: white;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+}
+#primul-text{
+    font-size: 25px;
+}
+.momentulTauDeRelax h2{
+    font-size: 30px;
+    padding-top: 5px;
+    border-bottom: 1px solid white;
+    padding-bottom: 19px;
+}
+#body-text{
+    padding-top: 40px;
+    font-size: 20px;
+    opacity: 0.5;
+    padding-bottom: 20px;
+}
+.rezerva{
+    width: 140px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.container{
+    top: 30px;
+    height: 100px;
+    display: block;
+    text-align:center;
+    line-height:200px;
+    font-size: 35px;
+    color: white;
+}
+.container h4{
+    height: 170px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid white;
+}
+.aromatic-div{
+    position: relative;
+    top: 200px;
+    background-image: url("../../images/aromatic.png");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 55em;
+    justify-content: space-between;
+    display: flex;
+}
+.aromatic-body-massage{
+    position: relative;
+    left: 90px;
+    top: 340px;
+    background-color: #352525;
+    color: white;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 280px;
+    height: 310px;
+    border-radius: 20px;
+}
+.aromatic-body-massage h2{
+    padding-bottom: 20px;
+    border-bottom: white 1px solid;
+}
+.aromatic-text{
+    padding-top: 35px;
+    font-size: 20px;
+    opacity: 0.5;
+    padding-bottom: 20px;
+}
+.aromatic-body-massage-rezerva{
+    position: relative;
+    right: 100px;
+    top: 130px;
+    background-color: #352525;
+    color: white;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+}
+.time-apreciate{
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+.aromatic-body-massage-rezerva .aromatic-text{
+    padding-top: 10px;
+}
+.hot-stone-div{
+    position: relative;
+    top: 200px;
+    background-image: url("../../images/stone.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    height: 65em;
+    justify-content: space-between;
+    display: flex;
+}
+.hot-stone-massage{
+    position: relative;
+    left: 90px;
+    top: 200px;
+    background-color: #2F0C0C;
+    color: white;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 280px;
+    height: 300px;
+    border-radius: 20px;
+}
+.hot-stone-massage-rezerva{
+    background-color: #2F0C0C;
+    position: relative;
+    right: 100px;
+    top: 550px;
+    color: white;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+}
+.hot-stone-massage-rezerva .aromatic-text{
+    padding-top: 10px;
+}
+.catre-servicii-div{
+    position: relative;
+    justify-content:center;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    top: 300px;
+    height: 100px;
+}
+#servicii-text{
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-bottom: #fff 1px solid;
+}
+#img-arrow{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.catre-terapii-btn{
+    width: 140px;
+    height: 35px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.footer {
+    position: relative;
+    top: 300px;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+  }
+.contact{
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+@media only screen and (max-width: 1100px) {
+    .hot-stone-massage{
+        top: 100px;
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .momentulTauDeRelax{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .container{
+        font-size: 25px;
+    }
+    .aromatic-body-massage{
+        font-size: 17px;
+    }
+    .aromatic-text{
+        font-size: 17px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .aromatic-body-massage{
+        height: 350px;
+    }
+    .hot-stone-massage{
+        height: 350px;
+    }
+    #servicii-text{
+        font-size: 17px;
+        padding-right: 30px;
+        padding-bottom: 7px;
+        padding-left: 10px;
+    }
+    #img-arrow{
+        padding-left: 10px;
+        padding-right: 20px;
+        width: 60px;
+    }
+    .catre-terapii-btn{
+        width: 120px;
+        height: 30px;
+        font-size: 18px;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .aromatic-body-massage{
+        height: 430px;
+    }
+    .hot-stone-massage{
+        height: 430px;
+    }
+    #servicii-text{
+        font-size: 15px;
+    }
+  }
+@media only screen and (max-width: 320px) {
+    .container{
+        font-size: 20px;
+    }
+  }
+@media only screen and (max-width: 300px) {
+    .aromatic-body-massage{
+        left: 45px;
+        width: 100%;
+        height: 430px;
+    }
+  }

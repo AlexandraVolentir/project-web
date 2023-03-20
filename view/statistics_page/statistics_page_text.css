@@ -1,0 +1,46 @@
+.question-text{
+    display: flex;
+    justify-content: left;
+    color: white;
+    text-align: left;
+    margin: 2px;
+    padding-left: 60px;
+    position: absolute;
+    text-align: center;
+    font-size: 3.0ch;
+    font-family: "Rufina", sans-serif;
+}
+
+.normal-text{
+
+    color: white;
+    text-align: center;
+    margin: 2px;
+    padding-left: 20px;
+    font-size: 3.5ch;
+    font-family: "Rufina", sans-serif;
+
+}
+
+.line{
+    margin-left: 5vw;
+    width: 90vw;
+    height: 47px;
+    border-bottom: 1px solid #ffffff;
+    position: absolute;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+}
+
+img {
+height: 40vw;
+border: 1px solid #ffffff;
+}
+

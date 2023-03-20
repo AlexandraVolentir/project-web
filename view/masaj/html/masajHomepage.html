@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../css/masajHomepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Masaj-homepage</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SerP</div>
+            <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                  <li id="home">Home</li>
+                    <li id="uber">Uber</li>
+                    <li id="masaj">Masaj</li>
+                    <li id="fitness">Fitness</li>
+                    <li class="login" id="login">Log In</li>
+              </div>
+            </ul>
+        </nav>
+    <div class="select-city">
+        <select id="city">
+            <option value="" id="display">City</option>
+            <option value="Bucuresti">Bucuresti</option>
+            <option value="Cluj">Cluj</option>
+            <option value="Iasi">Iasi</option>
+        </select>
+    </div>
+
+    <div class="beginning">
+        <div class="momentulTauDeRelax">
+            <p id="primul-text">Momentul tau de</p>
+            <h2>RELAXARE</h2>
+            <p id="body-text">Deconecteaza-te de la 
+                ritmul agitat al vietii cotidiene
+                si readu calmul si linistea in
+                mintea si corpul tau, cu ajutorul
+                masajului.</p>
+            <button class="rezerva" id="rezerva1">Rezerva</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h4>Cele mai apreciate masaje</h4>
+    </div>
+
+    <div class="aromatic-div">
+        <div class="aromatic-body-massage">
+            <h2>Aromatic body relax massage</h2>
+            <p class="aromatic-text">Masaj corporal de 
+                relaxare cu uleiuri 
+                esentiale ce cuprinde
+                si masajul scalpului.
+                </p>
+        </div>
+        <div class="aromatic-body-massage-rezerva">
+            <p class="time-apreciate">1h 30min</p>
+            <p class="aromatic-text">200RON</p>
+            <button class="rezerva" id="rezerva2">Rezerva</button>
+        </div>
+    </div>
+    <div class="hot-stone-div">
+        <div class="hot-stone-massage">
+            <h2>Hot Stone massage</h2>
+            <p class="aromatic-text">Masaj corporal cu pietre
+                calde, cu rolul de 
+                stimulare a punctelor 
+                energetice si redarea 
+                unei stari profunde de 
+                relaxare.
+                </p>
+        </div>
+        <div class="hot-stone-massage-rezerva">
+            <p class="time-apreciate">1h 30min</p>
+            <p class="aromatic-text">200RON</p>
+            <button class="rezerva" id="rezerva3">Rezerva</button>
+        </div>
+    </div>
+
+    <div class="catre-servicii-div">
+        <h2 id="servicii-text">Serviciile noastre</h2>
+        <img src="../../images/arrow.png" id="img-arrow" alt="arrow-display">
+        <button class="catre-terapii-btn" id="catre-terapii-btn">Terapii</button>
+    </div>
+
+    <div class="footer">
+        <div class="contact">
+            <p><i class="fa-solid fa-envelope"></i>  info@Masaj.com</p>
+        </div>
+        <div class="credits">
+            <p><i class="fa-regular fa-copyright"></i>  Copyright 2022 SerP</p>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../js/masajHomepage.js"></script>
+</body>
+</html>

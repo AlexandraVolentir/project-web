@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="statistics_page_navbar.css"/>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="statistics_page_text.css"/>
+    <link rel="stylesheet" href="statistics_page_small_button.css"/>
+    <link rel="stylesheet" href="statistics_page_medium_button.css"/>
+    <link rel="stylesheet" href="google-charts/charts.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+    <title>Serp</title>
+</head>
+ <body>
+    <nav class="navbar">
+        <div class="logo">SerP</div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li id="home">Home</li>
+                <li id="statistici">Statistici</li>
+                <li id="feedback">Rapoarte feedback</li>
+                <li id="addAngajat">Adăugare angajat</li>
+                <li class="deconectare" id="deconectare">Deconectare</li>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="question-text">
+        <b>   PAS 1: Alege categoria:  </b>
+    </div>
+    <div class = "chart-container">
+        <button class="btn btn3 cathegory-btn" id="zona">Zona</button>
+        <button class="btn btn3 cathegory-btn " id="serviciu">Serviciu</button>
+        <button class="btn btn3 cathegory-btn" id="pret">Pret </button>
+        <button class="btn btn3 cathegory-btn" id="sapt">Perspectiva</button>
+
+    </div>
+    <div class="line"></div>
+    <br><br><br>
+
+    <body>
+        <h3>Rezultat:</h3>
+        <div class="all-charts">
+            <div id="tag-one" class="gen-chart chart" style="width: 650px; height: 600px;"></div>
+            <div id="tag-two" class="gen-chart chart" style="width: 650px; height: 600px;"></div>
+            <div id="tag-three" class="gen-chart chart"></div>
+            <div id="complex_chart"  style="width: 2000px; height: 600px;"></div>
+        </div>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="google-charts/charts.js"></script>
+
+    </body>
+    <div class="line"></div>
+    <br><br><br>
+    <div class="question-text">
+        <b> PAS 2:  Alege modul de export</b>&#160;
+
+    </div>
+    <div class = "container">
+        <a id="csv-conv" download="file.csv"><button class="lil-btn lil-btn3">csv</button> </a>
+        <a id="pdf-conv" download="file.pdf"><button class="lil-btn lil-btn3">pdf</button> </a>
+        <a id="xml-conv" download="file.xml"><button class="lil-btn lil-btn3">xml</button> </a>
+        <a id="html-conv" download="file.html"><button class="lil-btn lil-btn3">html</button> </a>
+    </div>
+
+    <br><br><br>
+
+    <div class="footer">
+        <div class="contact">
+            <p><i class="fa-solid fa-envelope"></i>  info@serp.com</p>
+        </div>
+        <div class="credits">
+            <p><i class="fa-regular fa-copyright"></i>  Copyright 2022 SerP</p>
+        </div>
+      </div>
+      <div id="table_div"></div>
+      <script src="statistics_page.js"></script>
+ </body>
+</html>

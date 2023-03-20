@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Angajat Masaj</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <link href="angajat-masaj.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="../style.css"/>
+</head>
+<body >
+     <!-- <nav class="navbar">
+        <div class="logo">SerP</div>
+    </nav> -->
+    <nav class="navbar">
+        <div class="logo">SerP</div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li class="deconectare" id="deconectare"><a href="../index.html">Deconectare</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="select-city">
+        <select id="city" onchange="getAngajati()">
+            <option value="" id="display">City</option>
+            <option value="Bucuresti">Bucuresti</option>
+            <option value="Cluj">Cluj</option>
+            <option value="Iasi">Iasi</option>
+        </select>
+    </div>
+ <div class="container" >
+                <div class="table-responsive" itemscope itemtype="https://schema.org/Table" id="table-responsive1">
+                    <!-- tabel din mongo db -->
+                </div>
+                <div class="table-responsive" itemscope itemtype="https://schema.org/Table" id="table-responsive2">
+                    <!-- tabel din mongo db -->
+                </div>
+                <div class="table-responsive" itemscope itemtype="https://schema.org/Table" id="table-responsive3">
+                    <!-- tabel din mongo db -->
+                </div>
+                <div class="table-responsive" itemscope itemtype="https://schema.org/Table" id="table-responsive4">
+                    <!-- tabel din mongo db -->
+                </div>
+            </div>
+             <div class="footer">
+        <div class="contact">
+            <p><i class="fa-solid fa-envelope"></i>  info@Masaj.com</p>
+        </div>
+        <div class="credits">
+            <p><i class="fa-regular fa-copyright"></i>  Copyright 2022 SerP</p>
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="angajat-masaj.js"></script>
+</body>
+</html>

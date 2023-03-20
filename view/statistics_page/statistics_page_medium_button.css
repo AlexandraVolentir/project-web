@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rufina&display=swap');
+.container
+{
+    justify-content: center;
+    display: flex;
+    margin-top: 70px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.btn{
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 32px;
+    width:278px;
+    height: 60px;
+    text-align: center;
+    /* font-weight: bold; */
+    border: 3px solid #ffffff;
+    background: none;
+    padding: 15px 60px;
+    font-size: 24px;
+    font-family: "Rufina";
+}
+
+.btn3{
+    color: #000000;
+}
+
+.btn3:focus{
+    background: none;
+    font-style: bold;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.btn::before{
+    height: 0%;
+    background: #ffffff;
+    z-index: -1;
+    transition: 0.9s;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.btn3::before{
+    top:0;
+    border-radius: 0 0 50% 50%;
+}
+
+.btn3::before{
+    height: 180%;
+}
+
+.btn3:hover::before{
+    height: 0%;
+}
+
+.btn3:hover{
+    color: white;
+}
+
+.criteria-btn::before{
+    background: #dedede;
+}
+
+.cathegory-btn::before{
+    background: #c5c5c5;
+}

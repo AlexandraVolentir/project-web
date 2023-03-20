@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="adminStyle.css"/>
+    <link rel="stylesheet" href="../image_slider/image_slider.css">
+    <link rel="alternate" type="application/rss+xml" href="../rssXML.xml">
+    <title>Serp</title>
+</head>
+ <body>
+    <nav class="navbar">
+        <div class="logo">SerP</div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li id="home">Home</li>
+                <li id="statistici">Statistici</li>
+                <li id="feedback">Rapoarte feedback</li>
+                <li id="addAngajat">Adăugare angajat</li>
+                <li class="deconectare" id="deconectare">Deconectare</li>
+            </div>
+        </ul>
+    </nav>
+
+    <!--IMAGE SLIDER-->
+    <div class="img-slider-container">
+      <div class="img-slider">
+          <div class="slide active">
+            <img src="../image_slider/image_slider_uber.jpg" alt="">
+            <div class="info">
+              <h2>24/7 available - Uber. <br> Grow with us.</h2>
+              <p>Enhance Your Life. Just as safe and quick as your personal driver. Yo bring you to the places that matter.
+                Never before was a drive so easy and quick. Our expirienced drivers will be there for you.
+              </p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="../image_slider/image_slider_fitness.png" alt="">
+            <div class="info">
+              <h2>Dare to be great. Aquaterra fitness.</h2>
+              <p>Helping you to take fitness to the top level so you can get stronger and fitter. Here you can find your inner fitness instinct and become the best version of yourself.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="../image_slider/image_slider_delivery.jpg" alt="">
+            <div class="info">
+              <h2>Giving your Hunger a new Option. Delivery. <br>Ambrosia Hub.</h2>
+              <p>Rain or shine, it's time to dine. The only thing we're serious about here is food. So come give it a try and order your food with Ambrosia Hub. We deliver the best service across the country. Top reviews
+                evertwhere.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="../image_slider/image_slider_massage.png" alt="">
+            <div class="info">
+              <h2> Feel alive again.<br> Bleu Bay Wellness SPA.</h2>
+              <p>A haven for personal healing, growth, and discovery. Healing body, mind, and spirit! Our SPA professional took master classes all over the world to make you feel reborn in your own body.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="../image_slider/image_slider_restaurant.jpg" alt="">
+            <div class="info">
+              <h2>A Holistic School. <br> Chief Master Class. <br> Just for one month.</h2>
+              <p>A revolutionary way to educate love for the french cuisine. Buy a place while it's hot</p>
+            </div>
+          </div>
+          <div class="navigation">
+            <div class="btn active"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <div class="contact">
+            <p><i class="fa-solid fa-envelope"></i>  info@SerP.com</p>
+        </div>
+        <div class="credits">
+            <p><i class="fa-regular fa-copyright"></i>  Copyright 2022 SerP</p>
+        </div>
+		   <a href="../rssXML.xml">
+       <img src="../images/rss.png" border="0" width="35" height="35" alt="RSS">
+    </a>
+      </div>
+
+      <script>
+      var slides = document.querySelectorAll('.slide');
+      var btns = document.querySelectorAll('.btn');
+      let currentSlide = 1;
+  
+      // Javascript for image slider manual navigation
+      var manualNav = function(manual){
+        slides.forEach((slide) => {
+          slide.classList.remove('active');
+  
+          btns.forEach((btn) => {
+            btn.classList.remove('active');
+          });
+        });
+  
+        slides[manual].classList.add('active');
+        btns[manual].classList.add('active');
+      }
+  
+      btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          manualNav(i);
+          currentSlide = i;
+        });
+      });
+  
+      // Javascript for image slider autoplay navigation
+      var repeat = function(activeClass){
+        let active = document.getElementsByClassName('active');
+        let i = 1;
+  
+        var repeater = () => {
+          setTimeout(function(){
+            [...active].forEach((activeSlide) => {
+              activeSlide.classList.remove('active');
+            });
+  
+          slides[i].classList.add('active');
+          btns[i].classList.add('active');
+          i++;
+  
+          if(slides.length == i){
+            i = 0;
+          }
+          if(i >= slides.length){
+            return;
+          }
+          repeater();
+        }, 10000);
+        }
+        repeater();
+      }
+      repeat();
+      </script>
+      <script src="adminIndex.js"></script>
+
+ </body>
+</html>

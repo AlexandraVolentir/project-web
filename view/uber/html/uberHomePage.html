@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../css/uberHomePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Uber-homepage</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SerP</div>
+            <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                  <li id="home">Home</li>
+                    <li id="uber">Uber</li>
+                    <li id="masaj">Masaj</li>
+                    <li id="fitness">Fitness</li>
+                    <li class="login" id="login">Log In</li>
+              </div>
+            </ul>
+        </nav>
+    <div class="select-city">
+        <select id="city">
+            <option value="Bucuresti" selected>Bucuresti</option>
+            <option value="Cluj">Cluj</option>
+            <option value="Iasi">Iasi</option>
+        </select>
+    </div>
+    
+    <div class="uber">
+        <h3>Comanda un uber</h3>
+        <form id="uber-form">
+            <input type="text"  id="start" class="uber-form-field" placeholder="Unde te afli?">
+            <input type="text"  id="destinatie" class="uber-form-field" placeholder="Unde vrei sa mergi?">
+            <input type="submit" value="Comanda" id="uber-form-submit">
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="contact">
+            <p><i class="fa-solid fa-envelope"></i>  info@uber.com</p>
+        </div>
+        <div class="credits">
+            <p><i class="fa-regular fa-copyright"></i>  Copyright 2022 SerP</p>
+        </div>
+    </div>
+    <script src="../js/uberHomePage.js"></script>
+</body>
+</html>

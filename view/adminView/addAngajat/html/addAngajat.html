@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Adăugare Angajat</title>
+	  <link rel="stylesheet" href="../../adminStyle.css"/>
+    <link rel="stylesheet" href="../addAngajat.css">
+</head>
+
+<body>
+ <nav class="navbar">
+        <div class="logo">SerP</div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li id="home"><a href="../../adminIndex.html">Home</a></li>
+                <li id="statistici"><a href="../../../statistics_page/statistics_page.html">Statistici</a></li>
+                <li id="feedback"><a href="../../feedback/feedback.html">Rapoarte feedback</a></li>
+                <li id="addAngajat">Adăugare angajat</li>
+                <li class="deconectare" id="deconectare"><a href="../../../index.html">Deconectare</a></li>
+            </div>
+        </ul>
+    </nav>
+	<div class="angajat">
+        <h3>Adaugă un angajat</h3>
+        <form id="register-form">
+            <input type="text" name="username" id="username-field" class="register-form-field" placeholder="Username" required>
+            <input type="text" name="email" id="email-field" class="register-form-field" placeholder="Email" required>
+            <input type="password" name="password" id="password-field" class="register-form-field" placeholder="Password" required>
+            <input type="submit" value="Add" id="register-form-submit">
+        </form>
+  </div>
+  <div class="footer">
+        <div class="contact">
+            <p><i class="fa-solid fa-envelope"></i>  info@serp.com</p>
+        </div>
+        <div class="credits">
+            <p><i class="fa-regular fa-copyright"></i>  Copyright 2022 SerP</p>
+        </div>
+		   <a href="rssXML.xml">
+       <img src="../../../images/rss.png" border="0" width="35" height="35" alt="RSS">
+    </a>
+      </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="../addAngajat.js"></script>
+</body>
+
+</html>

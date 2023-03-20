@@ -1,0 +1,36 @@
+.all-charts{
+    display: flex;
+}
+
+.chart-container
+{
+    justify-content: center;
+    align-items:flex-start;
+    display: flex;
+    margin-top: 70px;
+    position: relative;
+    flex-wrap: wrap;
+    align-items:center;
+}
+
+@media screen and (min-width: 600px){
+    .chart  {
+        display: none;
+        display: inline-block;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .all-charts {
+        display:block;
+        margin-left: 150px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .all-charts {
+        display:block;
+        margin-left: -40px;
+    }
+  }
+

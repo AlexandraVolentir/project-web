@@ -1,0 +1,46 @@
+* {
+    margin: 0 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-right: 0;
+   }
+body {
+    margin-right: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+	width: 100%;
+}
+.confirmare{
+	height: 20%;
+    width: 600px;
+    padding-top: 40px;
+    display: grid;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+  .footer {
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+  }
+.contact{
+    padding-top: 15px;
+    padding-bottom: 5px;
+}

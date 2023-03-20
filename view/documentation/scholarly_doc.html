@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--responsive-->
+        <title>Documentația proiectului</title>
+        <link href="scholarly_doc.css" rel="stylesheet">
+        <style>
+            img {
+            margin-left: 0;
+
+            border: 1px solid #ffffff;
+            align-self: center;
+            }
+        </style>
+    </head>
+    <body prefix="schema: http://schema.org">
+        <article typeof="schema:ScholarlyArticle" resource="#">
+            <header>
+                <h1>SerP <br>(Service Providers on Web)</h1>
+            </header>
+            <div role="contentinfo">
+                <section typeof="sa:AuthorsList">
+                    <h2>Authors</h2>
+                    <ul>
+                        <li typeof="sa:ContributorRole" property="schema:author">
+                            <span typeof="schema:Person">
+                                <meta property="schema:givenName" content="Ana">
+                                <meta property="schema:familyName" content="Ciobanu">
+                                <span property="schema:name">Ciobanu Ana</span>
+                            </span>
+                        </li>
+                        <li typeof="sa:ContributorRole" property="schema:author">
+                            <span typeof="schema:Person">
+                                <meta property="schema:givenName" content="Bianca">
+                                <meta property="schema:familyName" content="Pricopi">
+                                <span property="schema:name">Pricopi Bianca</span>
+                            </span>
+                        </li>
+                        <li typeof="sa:ContributorRole" property="schema:author">
+                            <span typeof="schema:Person">
+                                <meta property="schema:givenName" content="Alexandra">
+                                <meta property="schema:familyName" content="Volentir">
+                                <span property="schema:name">Volentir Alexandra</span>
+                            </span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <section id="introduction" role="doc-introduction">
+                <h2>1.Introduction</h2>
+                <section>
+                    <h3>1.1 Purpose</h3>
+                    <p>
+                        The purpose of this document is to give you information and guidance on
+                        the implementation, functionalities and usage of
+                        a service providing app that hosts different services.
+                        The app stores, manipulates and displays information on the services hosted,
+                        giving the users possibility to edit, view, download and responsively interact
+                        with the interface in order to be able to post or book services directly from
+                        the app.
+                    </p>
+                </section>
+                <section>
+                    <h3>1.2 Product Scope</h3>
+                    <p>
+                        The app is intended to grow the business and improve some areas
+                        based on insider data and given statistics, as a result of information collected from its users.
+                        The app will serve as an intermidiate for hosting different kind
+                        of services, store and update data on business info, service providers info,
+                        bookings; we give the consumers accurate information on the current disponible services,
+                        trainers, free time-lots and a lot of other information, so that the customer
+                        could visualize and decide what's best for him in advance.
+                        <br>
+                        The main admin will have access to the insider data and statics, be
+                        capable of adding new employee accounts.
+                        <br>
+                        The human service providers will have a special account and will be able
+                        to vizualize data on the company they work for.
+                        The basic user will have the possibility of vizualize
+                        the general information on the website and book services.
+                        <br>
+                        It is good to know that the app doesn't dispose any payment method. After the booking of the service,
+                        the client will be given a personal code with which he/she could go to the
+                        service location and pay directly from there.
+                    </p>
+                </section>
+                <section typeof="sa:ReferenceList">
+                    <h3>1.3 References</h3>
+                    <p>
+                      <ul>
+                        <li  typeof="schema:WebPage"><a href="https://github.com/rick4470/IEEE-SRS-Tempate">IEEE System Requirements Specification Template, rick4470, 2015</a></li>
+                        <li  typeof="schema:WebPage"><a href="https://www.extrahop.com/resources/protocols/http/">Hypertext Transfer Protocol (HTTP), extrashop, 2022</a></li>
+                        <li>
+                          <a href="https://www.mongodb.com/why-use-mongodb">Why Use MongoDB and When to Use It?, MongoDB Inc. 2022</a>
+                        </li>
+                        <li  typeof="schema:WebPage"> <a href="https://www.youtube.com/c/CodingSnow">How to do an Image Slider, Coding Snow, 2018</a> </li>
+                        <li  typeof="schema:WebPage"><a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-projects.html">Course Page, Sabin-Corneliu Buraga, 2022</a></li>
+                        <li  typeof="schema:WebPage"><a href="https://mateimicu.github.io/tw/laboratoare/">Laboratory page page, Micu Matei, Gordin Stefan, 2022</a></li>
+                        <li typeof="schema:WebPage"><a href="https://www.lucidchart.com/pages/">Lucidchart</a></li>
+                      </ul>
+
+                </section>
+            </section>
+            <section>
+                <h2>2.Overall Description</h2>
+                <section>
+                    <h3>2.1 Product Functions</h3>
+                    <p>
+                      Major features of our program include:
+                        <ol>
+                          <li>Booking a service</li>
+                          <li>Introducing a new employee</li>
+                          <li>Downloading service data in CSV, XML, HMTL and PDF</li>
+                          <li>Querying the database to get statistics on all the businesses</li>
+                          <li>Review a service after booking it</li>
+                          <li>Authentication</li>
+                        </ol>
+
+                        <!-- <figure typeof="sa:Image">
+                          <img src="documentation_images/Flowchart.png"  width="880"
+                          height="625" alt="" >
+                          <figcaption>
+                           Fig.1-Flowchart diagram
+                          </figcaption>
+                        </figure> -->
+                        <figure typeof="sa:Image">
+                          <img src="documentation_images/flow.jpg"  width="800"
+                          height="600" alt="" >
+                          <figcaption>
+                           Fig.0-Flow
+                          </figcaption>
+                        </figure>
+                        <figure typeof="sa:Image">
+                          <img src="documentation_images/Flowchart_pages.png"  width="800"
+                          height="600" alt="" >
+                          <figcaption>
+                           Fig.1-Flowchart(Home (public page))
+                          </figcaption>
+                        </figure>
+                        <figure typeof="sa:Image">
+                          <img src="documentation_images/Admin_page.png"  width="800"
+                          height="600" alt="" >
+                          <figcaption>
+                           Fig.2-Flowchart(Admin Home page)
+                          </figcaption>
+                        </figure>
+                        <figure typeof="sa:Image">
+                          <img src="documentation_images/Fitness_page.png"  width="700"
+                          height="400" alt="" >
+                          <figcaption>
+                           Fig.3-Flowchart(Fitness Page)
+                          </figcaption>
+                        </figure>
+                        <figure typeof="sa:Image">
+                          <img src="documentation_images/Masaj_page.png"  width="700"
+                          height="500" alt="" >
+                          <figcaption>
+                           Fig.4-Flowchart(Masaj page)
+                          </figcaption>
+                        </figure>
+                        <figure typeof="sa:Image">
+                          <img src="documentation_images/Uber_page.png"  width="700"
+                          height="500" alt="" >
+                          <figcaption>
+                           Fig.5-Flowchart(Uber page)
+                          </figcaption>
+                        </figure>
+                        All these features will be described in the paragraphs below.
+
+                </section>
+                <section>
+                    <h3>2.2 User Classes and Characteristics</h3>
+                    <p>The program was designed to be used by an average user.
+                      The functionalities are easy and straightforward,
+                      so it is not needed any preliminary guidance. <br>
+                      <b>- Frequency of use.</b> An average user should access the site twice per week to check for updates and new services to buy. It should be your to-go app on a regular basis for standard services.
+                      <br>
+                      <b>- Subset of product functions used.</b> The product has basic functions like authentication, browsing, booking and reviewing. For the general user they are easy to use.
+                      The statistics part is accessible only by admin, even though he should have some basic knowledge of how the system works and operates.
+                      <br>
+                      <b>- Education level and expirience.</b> The general user should be at least in middle school in order to use the app, whereas the admin should have working knowledge in order to operate in the statistics page.
+                      <br>
+
+                    </p>
+                </section>
+                <section>
+                    <h3>2.3 Operating Environment</h3>
+                    <p>
+                      This is a web-app which will be disponible
+                      from any currently known web-browser(Chrome, Mozila Firefox, Google Chrome, Safari) and on any operating system which supports them(Windows, IOS, Android, Linux).
+                    </p>
+                </section>
+              <section>
+                <h3>2.4 Assumptions and Dependencies</h3>
+                <p>
+                 For our app we will use Google Charts in order to make the visual representation of the diagrams more attractive.
+                 Because we will make complex diagrams of different types (pie, bar, column) and they will manipulate complex data,
+                 it was decided to use this library instead of doing it from skratch.
+                </p>
+            </section>
+
+                </section>
+
+
+
+                <h2>3. External Interface Requirements</h2>
+                <section>
+                    <h3>3.1 User Interfaces</h3>
+                    This system would be used in a retail environment. It could be used for client side and administration side as well.
+
+                    Also, it will be used in the condition where a client wants to view/book/review a disposed service; for the admin side - when
+                    he would want to check the statistics, feedbacks and add a new employee to the system.
+                    <br>
+                    The full and detailed interface can be found at <b><a href="https://www.figma.com/file/Q2RfuiGgTovVFeYAezHKA4/Serp?node-id=250%3A2">this figma website link.</a></b><br><br>
+                   <p> The architecture of pages is simple enough so that users won’t be
+                      confused, but still focusing on the purpose of the application and the task user
+                      wants to accomplishes. A header sits at the top of each page and present the app logo and page
+                      titles, acting also as a navigational tool. Detailed buttons inform the user of the
+                      website’s functionalities and at the same time build towards a more comfortable
+                      navigation experience.
+                      The application pages can be classified into three categories: public - can be viewed by anyone,
+                      private - accessible only by users who have an account, these being employees and admin.
+                      In turn, the private ones can be accessed as follows: each employee can view the program page
+                      corresponding to the department he belongs to (massage, fitness, uber), and the admin is redirected to admin home page where he has access to
+                       following pages: Statistici, Rapoarte feedback, Adauga angajat.</p>
+                      <br><br>
+                    <b>Main page</b><br>
+                    The main page includes a descriptive header, footer, image slider and feedback form that give an insight into the app logic and functionality.
+                    The user can glide through the slider images and understand the cathegories of products he will get to see and the motivation
+                    behind booking those. The buttons <b>Home</b>, <b>Uber</b>, <b>Masaj</b>, <b>Fitness</b> and <b>Log in</b>
+                     will redirect the user to the
+                    <ul>
+                      <li> html pages corresponding to the attractive visualisation of data, booking and rating pages of concrete hosted services( <b>Uber</b>, <b>Masaj</b>, <b>Fitness</b> )</li>
+                      <li>login page ( <b>Log In</b> )</li>
+                      <li>The main home page  ( <b>Home</b> )</li>
+                    </ul>
+
+
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/Home_pageNew.png"  width="750"
+                      height="600" alt="" >
+                      <figcaption>
+                       Fig.6-Homepage
+                      </figcaption>
+                    </figure>
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/Feedback_form.png"  width="800"
+                      height="600" alt="" >
+                      <figcaption>
+                       Fig.7-Homepage Feedback form
+                      </figcaption>
+                    </figure>
+                    <p>In order to facilitate the transmission of new information to users,
+                      respectively for them to have access to new articles, updates, an rss feed
+                      was used. Users will no longer have to waste time browsing all the pages of the application,
+                      they will be able to find all the news with a single click on RSS icon at the bottom of page.
+                       A file with items in xml format will be displayed,
+                      which can be read with any RSS reader. Responsible for updating the RSS feed is the admin,
+                      who has access to the application code</p>
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/rss.png"  width="700"
+                      height="600" alt="" >
+                      <figcaption>
+                       Fig.7-Footer
+                      </figcaption>
+                    </figure>
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/rss_xml.png"  width="700"
+                      height="600" alt="" >
+                      <figcaption>
+                       Fig.7-RSS xml
+                      </figcaption>
+                    </figure>
+
+                    <br>
+                    Each service's page has a sugesstive design so that the customers will easily acknowledge its features and activity. Still the  main purpose is to give the
+                    user possibility to book a service, following some simple steps.
+
+                    Each cathegory has some general functionalities:
+                    <ul>
+                      <li>Booking</li>
+                      <li>Booking confirmation</li>
+                      <li>Eliberation of a general acess code</li>
+                      <li>Review of the service</li>
+                    </ul>
+
+                    <b>Uber Page</b> <br>
+
+                    By accessing the Uber page, the user is shown a "Command an Uber" or "Comanda un Uber" form with 2 fields,
+                    in which the user must complete the starting point and the destination.
+                    To continue the booking process the user must click on the "Comanda" button.
+                    The booking is registered with a unique code provided to the customer, as well the client can see car number and
+                    time of wait.
+
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/uber_pageNew.png"  width="800"
+                      height="600" alt="" >
+                      <figcaption>
+                       Fig.8-Uber cathegory
+                      </figcaption>
+                    </figure>
+
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/Confirmare_cursa.png"  width="800"
+                      height="600" alt="" >
+                      <figcaption>
+                       Fig.9-Uber confirmation details
+                      </figcaption>
+                    </figure>
+                    <br>
+                    <b>Fitness Page</b> <br>
+                    By accessing the fitness page, the user is given a short description of the service,
+                     as well as some of its advantages.
+
+
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/fitness_new.png"  width="800"
+                      height="600" alt="" >
+                      <figcaption>
+                       Fig.10-Fitness client page
+                      </figcaption>
+                    </figure>
+                    These are followed by the available fitness subscriptions, with short details for each and a "Purchase subscription" or "Ia-ți abonament" button.
+                    By clicking on it the user is redirected to a subscription form.
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/abonamente.png"  width="800"
+                      height="600" alt="" >
+                      <figcaption>
+                       Fig.11-Fitness subscriptions
+                      </figcaption>
+                    </figure>
+
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/iaAbonament.png"  width="800"
+                      height="600" alt="" >
+                      <figcaption>
+                       Fig.12- Fitness subscription form
+                      </figcaption>
+                    </figure>
+
+                    <b>Massage Page</b> <br>
+                    <!-- The Massage page presents the available types of massage, specifying
+                    for each, details such as: duration of a session, price, etc.
+                    A more detailed description is provided only for the most
+                    popular massages. The images as well as the names of each
+                    massage type aim to give a general idea to the client what
+                    each therapy entails.  -->
+                    <p>The massage page present de most appreciated type of massage with  details such as:
+                    duration of a session, price and
+                    a detailed description. To go through all the types of massage offered, at
+                    the bottom of the page click on 'Terapii' button.</p>
+
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/masaje_apreciate.png"  width="600"
+                      height="400" alt="" >
+                      <figcaption>
+                       Fig.15-Massage page
+                      </figcaption>
+                    </figure>
+
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/terapii_buton.png"  width="600"
+                      height="400" alt="" >
+                      <figcaption>
+                       Fig.16- Redirection to therapies
+                      </figcaption>
+                    </figure>
+                    The images as well as the names of each
+                    massage type aim to give a general idea to the client what
+                    each therapy entails. To book a massage session click on the 'Rezerva' button,
+                    it will redirect the user to the appropriate form.
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/short_terapii.png"  width="600"
+                      height="400" alt="" >
+                      <figcaption>
+                       Fig.17- Therapies
+                      </figcaption>
+                    </figure>
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/rezerva_masaj.png"  width="600"
+                      height="400" alt="" >
+                      <figcaption>
+                       Fig.18- Massage reservation
+                      </figcaption>
+                    </figure>
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/confirmare_masaj.png"  width="600"
+                      height="400" alt="" >
+                      <figcaption>
+                       Fig.19- Massage reservation confirmation
+                      </figcaption>
+                    </figure>
+                    <b>
+                      Pages with private access
+                    </b>
+                    <br>
+                    In order to access the private access pages mentioned,
+                    users who have been assigned an account must log in.
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/logare.png"  width="600"
+                      height="400" alt="" >
+                      <figcaption>
+                       Fig.19- Log in
+                      </figcaption>
+                    </figure>
+                    <p>Each authenticated employee will be directed to a page where they can view
+                     the program for the department to which they belong. For fitness and massage
+                     services, they must first select the city for which they want to view the data,
+                     after which they will be able to see a table for each employee with his
+                     corresponding program.
+                     The data in the pages for employees: Uber, Fitness, Massage and in the feedback
+                      page are displayed in tables to be easily read and to find the necessary
+                      information in a short time.</p>
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/angajat_fitness.png"  width="600"
+                      height="400" alt="" >
+                      <figcaption>
+                       Fig.20- Fitness employee
+                      </figcaption>
+                    </figure>
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/angajat_masaj.png"  width="600"
+                      height="400" alt="" >
+                      <figcaption>
+                       Fig.21- Massage employee
+                      </figcaption>
+                    </figure>
+                    In the case of uber employees, they will be able to see all ordered
+                    trips with the following details: start, destination, distance, price, area,
+                     whether it is urban or not.
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/angajat_uber.png"  width="600"
+                      height="400" alt="" >
+                      <figcaption>
+                       Fig.22- Uber employee
+                      </figcaption>
+                    </figure>
+                    To disconnect they must click on 'Deconectare' button after which they will be
+                    redirected to the public home page.
+                    <br>
+                    <b>Pages that can only be accessed by admin</b>
+                    A header sits at the top of admin home page and present the app logo and page titles: Home, Statistici, Rapoarte feedback,
+                    Adauga angajat, Deconectare, acting also as a navigational tool.
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/admin_pageNew.png"  width="600"
+                      height="400" alt="" >
+                      <figcaption>
+                       Fig.23- Admin home page
+                      </figcaption>
+                    </figure>
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/statistici_pas1.png"  width="600"
+                      height="400" alt="" >
+                      <figcaption>
+                       Fig.24- Statistics step 1
+                      </figcaption>
+                    </figure>
+
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/statistici_pas2.png"  width="600"
+                      height="400" alt="" >
+                      <figcaption>
+                       Fig.25- Statistics step 2
+                      </figcaption>
+                    </figure>
+                    !!!
+                    The <b>Statistics</b> page is designed to be used by the admin of the application and it has a little bit more level of complexity as the other pages.
+                    You can visualize which cathegory to choose from the disponible statistics.
+                    <br>
+                    Initially, we have four cathegories from which we can choose ( <b>Zona</b>, <b>Serviciu</b>, <b>Pret</b>, <b>Perspectiva</b> ). By choosing the cathegory,
+                    the admin gets two the next ramification, which is different for each cathegory.
+                    <br> <br>
+                    <b>Zona</b> could be classified by:
+                    <ul>
+                      <li>Iasi</li>
+                      <li>Cluj</li>
+                      <li>Bucuresti</li>
+
+                    </ul>
+                    <br>
+                    The <b>Serviciu</b> could be classified by:
+                    <ul>
+                      <li>Fitness</li>
+                      <li>Masaj</li>
+                      <li>Uber</li>
+
+                    </ul>
+                    <br>
+                    Theb <b>Pret</b> cathegory could be classified by:
+                    <ul>
+                      <li>Profitul sumar total pe fiecare
+                        categorie
+                        </li>
+                      <li>Profitul mediu in lei</li>
+                      <li>Profitul mediu pe client in lei</li>
+                    </ul>
+
+                    The <b>Insights</b> or the <b>Perspectiva</b> page describes the overall progress and pottential of each compartiment.
+
+
+                    In the example bellow we selected the <b>Fitness</b> cathegory from the 5 initial possibilities.
+                    Then we channeled with the "Subscription type" or "Tip abonament" criteria and then, chose the month of the current year
+                    by which the charts and statistics will be drawn - "April".
+                    In this way, the user interacted with the interface and did the right selection for his necessities.
+                    As a result, the corresponding charts were displayed. As you can see the charts are abailable in different forms(pie chart, bar chart, column chart)
+                    <p>In the feedback page the admin can view all the received feedback, with the following
+                      details: date of posting, city, service, rating, content of the feedback.</p>
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/rapoarte_feedback.png"  width="600"
+                      height="400" alt="" >
+                      <figcaption>
+                       Fig.26- Feedback reports
+                      </figcaption>
+                    </figure>
+                    <p>In order to add a new employee, respectively to associate an account, the admin
+                       must access the 'Adaugare angajat' page, where he will fill in the fields: username,
+                       email, password. By clicking on the 'Add' button, if he has filled in all the
+                        fields, the new employee will be added to the database and admin will be
+                         redirected to the page confirming the successful completion of this action. To prevent unauthorized access to user
+                         passwords, they will be encrypted when entered into the database, in order to do this bcryptjs package
+                        was used.</p>
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/adaugare_angajat.png"  width="600"
+                      height="400" alt="" >
+                      <figcaption>
+                       Fig.27- Add employee
+                      </figcaption>
+                    </figure>
+                    <figure typeof="sa:Image">
+                      <img src="documentation_images/confirmare_adaugare_angajat.png"  width="600"
+                      height="400" alt="" >
+                      <figcaption>
+                       Fig.28- Employee addition confirmation
+                      </figcaption>
+                    </figure>
+                  </section>
+                <section>
+                    <h3>3.2. Hardware Interfaces</h3>
+                    <p>The system is supported on all operating systems and is fully functional.</p>
+                    The app doensn't need to be downloaded, so it doesn't need any special requirements furhter than a working browser.
+
+                </section>
+                <section>
+                    <h3>3.3 Software and Communication Interfaces</h3>
+                    <p>
+
+<!--
+                      <b>GET</b> requests a specific resource in its entirety.
+                      <b>HEAD</b> requests a specific resource without the body content.
+                      <b>POST</b> adds content, messages, or data to a new page under an existing web resource.
+                      <b>PUT</b> directly modifies an existing web resource or creates a new URI if need be. -->
+
+                      <br>
+                      The general representation of the back will look like this:
+                      <figure typeof="sa:Image">
+                        <img src="documentation_images/arhitectura.png"  width="880"
+                        height="625" alt="" >
+                        <figcaption>
+                         Fig.29-Backend diagram
+                        </figcaption>
+                      </figure>
+
+                      <figure typeof="sa:Image">
+                        <img src="documentation_images/c1.png"  width="880"
+                        height="625" alt="" >
+                        <figcaption>
+                         Fig.30-Diagrama de context C4
+                        </figcaption>
+                      </figure>
+
+                      <figure typeof="sa:Image">
+                        <img src="documentation_images/c2.png"  width="880"
+                        height="625" alt="" >
+                        <figcaption>
+                         Fig.31-Diagrama de container C4
+                        </figcaption>
+                      </figure>
+
+
+
+
+                </section>
+            <section>
+              <h2>4. System features</h2>
+              <section>
+                  <h3>4.1 Add employee</h3>
+                  <p>This feature, that can be accesed only by admin, involves creating a new user account for an employee. The admin fills in the required fields (username, email,  password), click on the "Add" button and, if the information is valid a new user account of a specific department(massage, fitness, uber) is created.</p>
+              </section>
+              <section>
+                  <h3>4.2 Log in</h3>
+                  <p>The employee-user authentication can be performed by accessing "Log in" on Home page.
+                      If the introduced data is correct, the user will be redirected to program page of department he is part of, for example a massage employee will see all reservation for masage.</p>
+              </section>
+               <section>
+                  <h3>4.3 Booking</h3>
+                  <p>Each client can book any of the services presented, within the time limits or available subscriptions. Depending on the type of service, additional data may be requested. For example to order an Uber it is necessary to specify the point of departure and the destination.</p>
+              </section>
+               <section>
+                  <h3>4.4 Statistics</h3>
+                  <p>
+                    The statistics page can be used only by admin. Statistics are generated based on stored data(in database) and choosed criteria (type of service, time zone, etc). Charts obtained from this process can be downloaded in HTML,CSV, PDF and XML format.
+                  </p>
+              </section>
+                <section>
+                  <h3>4.5 Admin</h3>
+                  <p>
+                     <ul>
+                      <li>Maintain proper record of available services and customers in database; </li>
+                      <li>Add new employees; </li>
+                      <li>Manage all software;</li>
+                      <li>Access al feedbacks received</li>
+                      <li>Access statistics and download them
+                    </ul>
+
+              </section>
+          </section>
+        </article>
+    </body>
+</html>

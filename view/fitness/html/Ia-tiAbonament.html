@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rezervare abonamente fitness">
+    <meta name="keywords" content="Fitness, Abonament, Antrenor">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../css/Ia-tiAbonament.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Ia-ți abonament</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SerP</div>
+            <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                  <li id="home">Home</li>
+                    <li id="uber">Uber</li>
+                    <li id="masaj">Masaj</li>
+                    <li id="fitness">Fitness</li>
+              </div>
+            </ul>
+        </nav>
+    <div class="rezerva-div" itemscope itemtype="https://schema.org/Service">
+        <h2  id="rezerva-abonament">Ia-ți abonament</h2>
+        <!-- <div class="detalii"> 
+             <div id="write"></div>
+            <div class="select-data">
+                <select id="data">
+                    <option value="" class="display">Începând din data de:</option>
+                    <option value="16.05">16.05.22</option>
+                    <option value="17.05">17.05.22</option>
+                    <option value="18.05">18.05.22</option>
+                    <option value="19.05">19.05.22</option>
+                    <option value="20.05">20.05.22</option>
+                    <option value="21.05">21.05.22</option>
+                    <option value="22.05">22.05.22</option>
+                </select>
+            </div>
+            <div class="trainerPersonal">
+                <h3>Antrenor personal:</h3>
+                   <label class="containerTrainer">Da
+                  <input type="radio" checked="checked" name="radio">
+                   <span class="checkmark"></span>
+                      </label>
+                      <label class="containerTrainer">Nu
+                      <input type="radio" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+
+            </div>
+            <button class="rezerva-acum">Rezerva</button>
+        </div> -->
+        <form id="fitness-form">
+            <select id="oras" onchange="getAbonamente()">
+                <option value="" class="display">Oras</option>
+                <option value="Bucuresti">Bucuresti</option>
+                <option value="Cluj">Cluj</option>
+                <option value="Iasi">Iasi</option>
+            </select>
+            <div class="select-tip">
+                <select id="tip" onchange="getAntrenori()">
+                    <option value="" class="display">Tip abonament</option>
+                </select>
+            </div>
+            <select id="antrenor">
+                <option value="" class="display">Antrenor</option>
+            </select>
+            <input type="text"  id="numeClient" class="fitness-form-field" placeholder="Nume">
+            <input type="submit" value="Comanda" id="fitness-form-submit">
+        </form>
+    </div>
+    <div class="footer">
+        <div class="contact">
+            <p><i class="fa-solid fa-envelope"></i>  info@aquaterraFitness.com</p>
+        </div>
+        <div class="credits">
+            <p><i class="fa-regular fa-copyright"></i>  Copyright 2022 SerP</p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../js/Ia-tiAbonament.js"></script>
+</body>
+</html>
